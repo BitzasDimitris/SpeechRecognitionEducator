@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C056D772-0216-3C1C-B4AA-3B0CF873B9BE}</ProjectGuid>
+    <RootNamespace>SpeechRecognitionEducator</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>SpeechRecognitionEducator</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <PlatformToolset>v142</PlatformToolset>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>SpeechRecognitionEducator</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">SpeechRecognitionEducator</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">SpeechRecognitionEducator</TargetName>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;U:/QtProjects/SpeechRecognitionEducator\include;DEPENDPATH;+=;U:/QtProjects/SpeechRecognitionEducator\include;C:\Program Files (x86)\AMD APP SDK\3.0\include;DEPENDPATH;+=;C:\Program Files (x86)\AMD APP SDK\3.0\include;..\..\QT\5.9.1\MSVC2017_64\include;..\..\QT\5.9.1\MSVC2017_64\include\QtGui;..\..\QT\5.9.1\MSVC2017_64\include\QtANGLE;..\..\QT\5.9.1\MSVC2017_64\include\QtCore;release;..\..\QT\5.9.1\MSVC2017_64\mkspecs\win32-msvc;.\GeneratedFiles;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtMultimedia;$(QTDIR)\include\QtMultimediaWidgets;$(QTDIR)\include\QtQuick;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtScriptTools;$(QTDIR)\include\QtUiTools;$(QTDIR)\include\QtScript;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtConcurrent;$(QTDIR)\include\QtQuickWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;QT_NO_DEBUG;QT_GUI_LIB;QT_CORE_LIB;NDEBUG;QT_MULTIMEDIA_LIB;QT_MULTIMEDIAWIDGETS_LIB;QT_QUICK_LIB;QT_OPENGL_LIB;QT_SCRIPTTOOLS_LIB;QT_UITOOLS_LIB;QT_SCRIPT_LIB;QT_WIDGETS_LIB;QT_CONCURRENT_LIB;QT_QUICKWIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>U:\QT\5.9.1\MSVC2017_64\lib\qtmain.lib;shell32.lib;\;C:\Program;Files;(x86)\AMD;APP;SDK\3.0\lib\x86\OpenCL.lib\;\;C:\Program;Files;(x86)\AMD;APP;SDK\3.0\lib\x86\amdocl.lib\;\;C:\Program;Files;(x86)\AMD;APP;SDK\3.0\lib\x86\amdocl12cl.lib\;\;C:\Program;Files;(x86)\AMD;APP;SDK\3.0\lib\x86\glew32.lib\;\;C:\Program;Files;(x86)\AMD;APP;SDK\3.0\lib\x86\glut32.lib\;U:\QT\5.9.1\MSVC2017_64\lib\Qt5Gui.lib;U:\QT\5.9.1\MSVC2017_64\lib\Qt5Core.lib;Qt5Core.lib;Qt5Gui.lib;Qt5Multimedia.lib;Qt5MultimediaWidgets.lib;Qt5Quick.lib;Qt5OpenGL.lib;opengl32.lib;glu32.lib;Qt5ScriptTools.lib;Qt5UiTools.lib;Qt5Script.lib;Qt5Widgets.lib;Qt5Concurrent.lib;Qt5QuickWidgets.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>U:\QT\5.9.1\MSVC2017_64\lib;C:\utils\my_sql\my_sql\lib;C:\utils\postgresql\pgsql\lib;$(QTDIR)\lib;"C:\Program Files (x86)\AMD APP SDK\3.0\lib\x86";%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\SpeechRecognitionEducator.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;QT_NO_DEBUG;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;U:/QtProjects/SpeechRecognitionEducator\include;DEPENDPATH;+=;C:\Program Files (x86)\AMD APP SDK\3.0\include;U:\QT\5.9.1\MSVC2017_64\include;U:\QT\5.9.1\MSVC2017_64\include\QtGui;U:\QT\5.9.1\MSVC2017_64\include\QtANGLE;U:\QT\5.9.1\MSVC2017_64\include\QtCore;debug;U:\QT\5.9.1\MSVC2017_64\mkspecs\win32-msvc;.\GeneratedFiles;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtMultimedia;$(QTDIR)\include\QtMultimediaWidgets;$(QTDIR)\include\QtQuick;$(QTDIR)\include\QtOpenGL;$(QTDIR)\include\QtScriptTools;$(QTDIR)\include\QtUiTools;$(QTDIR)\include\QtScript;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtConcurrent;$(QTDIR)\include\QtQuickWidgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;QT_GUI_LIB;QT_CORE_LIB;QT_MULTIMEDIA_LIB;QT_MULTIMEDIAWIDGETS_LIB;QT_QUICK_LIB;QT_OPENGL_LIB;QT_SCRIPTTOOLS_LIB;QT_UITOOLS_LIB;QT_SCRIPT_LIB;QT_WIDGETS_LIB;QT_CONCURRENT_LIB;QT_QUICKWIDGETS_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+      <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>U:\QT\5.9.1\MSVC2017_64\lib\qtmaind.lib;shell32.lib;\;C:\Program;Files;(x86)\AMD;APP;SDK\3.0\lib\x86\OpenCL.lib\;\;C:\Program;Files;(x86)\AMD;APP;SDK\3.0\lib\x86\amdocl.lib\;\;C:\Program;Files;(x86)\AMD;APP;SDK\3.0\lib\x86\amdocl12cl.lib\;\;C:\Program;Files;(x86)\AMD;APP;SDK\3.0\lib\x86\glew32.lib\;\;C:\Program;Files;(x86)\AMD;APP;SDK\3.0\lib\x86\glut32.lib\;U:\QT\5.9.1\MSVC2017_64\lib\Qt5Guid.lib;U:\QT\5.9.1\MSVC2017_64\lib\Qt5Cored.lib;Qt5Cored.lib;Qt5Guid.lib;Qt5Multimediad.lib;Qt5MultimediaWidgetsd.lib;Qt5Quickd.lib;Qt5OpenGLd.lib;opengl32.lib;glu32.lib;Qt5ScriptToolsd.lib;Qt5UiToolsd.lib;Qt5Scriptd.lib;Qt5Widgetsd.lib;Qt5Concurrentd.lib;Qt5QuickWidgetsd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>U:\QT\5.9.1\MSVC2017_64\lib;C:\utils\my_sql\my_sql\lib;C:\utils\postgresql\pgsql\lib;$(QTDIR)\lib;C:\Program Files (x86)\AMD APP SDK\3.0\lib\x86_64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>"/MANIFESTDEPENDENCY:type='win32' name='Microsoft.Windows.Common-Controls' version='6.0.0.0' publicKeyToken='6595b64144ccf1df' language='*' processorArchitecture='*'" %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LargeAddressAware>true</LargeAddressAware>
+      <OutputFile>$(OutDir)\SpeechRecognitionEducator.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;WIN64;QT_GUI_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Debug\moc_audiosettingsdialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_directoryrunner.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_framesizedialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_frameswindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_hmmsettings.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_hmmtrainer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_mfccdialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_openclinterface.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_openclsettings.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_qcustomplot.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_threadhandler.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_waveform.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_WavFile.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Debug\moc_wavfilesholder.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_Resources.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Release\moc_audiosettingsdialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_directoryrunner.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_framesizedialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_frameswindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_hmmsettings.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_hmmtrainer.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_mfccdialog.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_openclinterface.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_openclsettings.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_qcustomplot.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_threadhandler.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_waveform.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_WavFile.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="Release\moc_wavfilesholder.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="SoundDataOperators.cpp" />
+    <ClCompile Include="Wavfile.cpp" />
+    <ClCompile Include="audiosettingsdialog.cpp" />
+    <ClCompile Include="directoryrunner.cpp" />
+    <ClCompile Include="framesizedialog.cpp" />
+    <ClCompile Include="frameswindow.cpp" />
+    <ClCompile Include="hmmsettings.cpp" />
+    <ClCompile Include="hmmtrainer.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainwindow.cpp" />
+    <ClCompile Include="matrixcalcs.cpp" />
+    <ClCompile Include="mfccdialog.cpp" />
+    <ClCompile Include="mfccholder.cpp" />
+    <ClCompile Include="mog.cpp" />
+    <ClCompile Include="openclinterface.cpp" />
+    <ClCompile Include="openclsettings.cpp" />
+    <ClCompile Include="phoneme.cpp" />
+    <ClCompile Include="phonemeparser.cpp" />
+    <ClCompile Include="phonemesLibrary.cpp" />
+    <ClCompile Include="qcustomplot.cpp" />
+    <ClCompile Include="threadhandler.cpp" />
+    <ClCompile Include="waveform.cpp" />
+    <ClCompile Include="wavfilesholder.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_audiosettingsdialog.h" />
+    <ClInclude Include="GeneratedFiles\ui_framesizedialog.h" />
+    <ClInclude Include="GeneratedFiles\ui_frameswindow.h" />
+    <ClInclude Include="GeneratedFiles\ui_hmmsettings.h" />
+    <ClInclude Include="GeneratedFiles\ui_mainwindow.h" />
+    <ClInclude Include="GeneratedFiles\ui_mfccdialog.h" />
+    <ClInclude Include="GeneratedFiles\ui_openclsettings.h" />
+    <ClInclude Include="GeneratedFiles\ui_waveform.h" />
+    <ClInclude Include="SoundDataOperators.h" />
+    <CustomBuild Include="WavFile.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG -DQT_MULTIMEDIA_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_SCRIPTTOOLS_LIB -DQT_UITOOLS_LIB -DQT_SCRIPT_LIB -DQT_WIDGETS_LIB -DQT_CONCURRENT_LIB -DQT_QUICKWIDGETS_LIB  "-I." "-IU:\QtProjects\SpeechRecognitionEducator\include" "-I.\DEPENDPATH" "-I.\+=" "-IC:\Program Files (x86)\AMD APP SDK\3.0\include" "-I.\..\..\QT\5.9.1\MSVC2017_64\include" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtGui" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtANGLE" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtCore" "-I.\release" "-I.\..\..\QT\5.9.1\MSVC2017_64\mkspecs\win32-msvc" "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtMultimedia" "-I$(QTDIR)\include\QtMultimediaWidgets" "-I$(QTDIR)\include\QtQuick" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtScriptTools" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtScript" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtConcurrent" "-I$(QTDIR)\include\QtQuickWidgets"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing WavFile.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_GUI_LIB -DQT_CORE_LIB -DQT_MULTIMEDIA_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_SCRIPTTOOLS_LIB -DQT_UITOOLS_LIB -DQT_SCRIPT_LIB -DQT_WIDGETS_LIB -DQT_CONCURRENT_LIB -DQT_QUICKWIDGETS_LIB  "-I." "-IU:\QtProjects\SpeechRecognitionEducator\include" "-I.\DEPENDPATH" "-I.\+=" "-IC:\Program Files (x86)\AMD APP SDK\3.0\include" "-IU:\QT\5.9.1\MSVC2017_64\include" "-IU:\QT\5.9.1\MSVC2017_64\include\QtGui" "-IU:\QT\5.9.1\MSVC2017_64\include\QtANGLE" "-IU:\QT\5.9.1\MSVC2017_64\include\QtCore" "-I.\debug" "-IU:\QT\5.9.1\MSVC2017_64\mkspecs\win32-msvc" "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtMultimedia" "-I$(QTDIR)\include\QtMultimediaWidgets" "-I$(QTDIR)\include\QtQuick" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtScriptTools" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtScript" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtConcurrent" "-I$(QTDIR)\include\QtQuickWidgets"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing WavFile.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="audiosettingsdialog.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG -DQT_MULTIMEDIA_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_SCRIPTTOOLS_LIB -DQT_UITOOLS_LIB -DQT_SCRIPT_LIB -DQT_WIDGETS_LIB -DQT_CONCURRENT_LIB -DQT_QUICKWIDGETS_LIB  "-I." "-IU:\QtProjects\SpeechRecognitionEducator\include" "-I.\DEPENDPATH" "-I.\+=" "-IC:\Program Files (x86)\AMD APP SDK\3.0\include" "-I.\..\..\QT\5.9.1\MSVC2017_64\include" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtGui" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtANGLE" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtCore" "-I.\release" "-I.\..\..\QT\5.9.1\MSVC2017_64\mkspecs\win32-msvc" "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtMultimedia" "-I$(QTDIR)\include\QtMultimediaWidgets" "-I$(QTDIR)\include\QtQuick" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtScriptTools" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtScript" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtConcurrent" "-I$(QTDIR)\include\QtQuickWidgets"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing audiosettingsdialog.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_GUI_LIB -DQT_CORE_LIB -DQT_MULTIMEDIA_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_SCRIPTTOOLS_LIB -DQT_UITOOLS_LIB -DQT_SCRIPT_LIB -DQT_WIDGETS_LIB -DQT_CONCURRENT_LIB -DQT_QUICKWIDGETS_LIB  "-I." "-IU:\QtProjects\SpeechRecognitionEducator\include" "-I.\DEPENDPATH" "-I.\+=" "-IC:\Program Files (x86)\AMD APP SDK\3.0\include" "-IU:\QT\5.9.1\MSVC2017_64\include" "-IU:\QT\5.9.1\MSVC2017_64\include\QtGui" "-IU:\QT\5.9.1\MSVC2017_64\include\QtANGLE" "-IU:\QT\5.9.1\MSVC2017_64\include\QtCore" "-I.\debug" "-IU:\QT\5.9.1\MSVC2017_64\mkspecs\win32-msvc" "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtMultimedia" "-I$(QTDIR)\include\QtMultimediaWidgets" "-I$(QTDIR)\include\QtQuick" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtScriptTools" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtScript" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtConcurrent" "-I$(QTDIR)\include\QtQuickWidgets"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing audiosettingsdialog.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="directoryrunner.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG -DQT_MULTIMEDIA_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_SCRIPTTOOLS_LIB -DQT_UITOOLS_LIB -DQT_SCRIPT_LIB -DQT_WIDGETS_LIB -DQT_CONCURRENT_LIB -DQT_QUICKWIDGETS_LIB  "-I." "-IU:\QtProjects\SpeechRecognitionEducator\include" "-I.\DEPENDPATH" "-I.\+=" "-IC:\Program Files (x86)\AMD APP SDK\3.0\include" "-I.\..\..\QT\5.9.1\MSVC2017_64\include" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtGui" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtANGLE" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtCore" "-I.\release" "-I.\..\..\QT\5.9.1\MSVC2017_64\mkspecs\win32-msvc" "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtMultimedia" "-I$(QTDIR)\include\QtMultimediaWidgets" "-I$(QTDIR)\include\QtQuick" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtScriptTools" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtScript" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtConcurrent" "-I$(QTDIR)\include\QtQuickWidgets"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing directoryrunner.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_GUI_LIB -DQT_CORE_LIB -DQT_MULTIMEDIA_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_SCRIPTTOOLS_LIB -DQT_UITOOLS_LIB -DQT_SCRIPT_LIB -DQT_WIDGETS_LIB -DQT_CONCURRENT_LIB -DQT_QUICKWIDGETS_LIB  "-I." "-IU:\QtProjects\SpeechRecognitionEducator\include" "-I.\DEPENDPATH" "-I.\+=" "-IC:\Program Files (x86)\AMD APP SDK\3.0\include" "-IU:\QT\5.9.1\MSVC2017_64\include" "-IU:\QT\5.9.1\MSVC2017_64\include\QtGui" "-IU:\QT\5.9.1\MSVC2017_64\include\QtANGLE" "-IU:\QT\5.9.1\MSVC2017_64\include\QtCore" "-I.\debug" "-IU:\QT\5.9.1\MSVC2017_64\mkspecs\win32-msvc" "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtMultimedia" "-I$(QTDIR)\include\QtMultimediaWidgets" "-I$(QTDIR)\include\QtQuick" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtScriptTools" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtScript" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtConcurrent" "-I$(QTDIR)\include\QtQuickWidgets"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing directoryrunner.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="framesizedialog.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG -DQT_MULTIMEDIA_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_SCRIPTTOOLS_LIB -DQT_UITOOLS_LIB -DQT_SCRIPT_LIB -DQT_WIDGETS_LIB -DQT_CONCURRENT_LIB -DQT_QUICKWIDGETS_LIB  "-I." "-IU:\QtProjects\SpeechRecognitionEducator\include" "-I.\DEPENDPATH" "-I.\+=" "-IC:\Program Files (x86)\AMD APP SDK\3.0\include" "-I.\..\..\QT\5.9.1\MSVC2017_64\include" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtGui" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtANGLE" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtCore" "-I.\release" "-I.\..\..\QT\5.9.1\MSVC2017_64\mkspecs\win32-msvc" "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtMultimedia" "-I$(QTDIR)\include\QtMultimediaWidgets" "-I$(QTDIR)\include\QtQuick" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtScriptTools" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtScript" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtConcurrent" "-I$(QTDIR)\include\QtQuickWidgets"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing framesizedialog.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_GUI_LIB -DQT_CORE_LIB -DQT_MULTIMEDIA_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_SCRIPTTOOLS_LIB -DQT_UITOOLS_LIB -DQT_SCRIPT_LIB -DQT_WIDGETS_LIB -DQT_CONCURRENT_LIB -DQT_QUICKWIDGETS_LIB  "-I." "-IU:\QtProjects\SpeechRecognitionEducator\include" "-I.\DEPENDPATH" "-I.\+=" "-IC:\Program Files (x86)\AMD APP SDK\3.0\include" "-IU:\QT\5.9.1\MSVC2017_64\include" "-IU:\QT\5.9.1\MSVC2017_64\include\QtGui" "-IU:\QT\5.9.1\MSVC2017_64\include\QtANGLE" "-IU:\QT\5.9.1\MSVC2017_64\include\QtCore" "-I.\debug" "-IU:\QT\5.9.1\MSVC2017_64\mkspecs\win32-msvc" "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtMultimedia" "-I$(QTDIR)\include\QtMultimediaWidgets" "-I$(QTDIR)\include\QtQuick" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtScriptTools" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtScript" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtConcurrent" "-I$(QTDIR)\include\QtQuickWidgets"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing framesizedialog.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="frameswindow.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG -DQT_MULTIMEDIA_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_SCRIPTTOOLS_LIB -DQT_UITOOLS_LIB -DQT_SCRIPT_LIB -DQT_WIDGETS_LIB -DQT_CONCURRENT_LIB -DQT_QUICKWIDGETS_LIB  "-I." "-IU:\QtProjects\SpeechRecognitionEducator\include" "-I.\DEPENDPATH" "-I.\+=" "-IC:\Program Files (x86)\AMD APP SDK\3.0\include" "-I.\..\..\QT\5.9.1\MSVC2017_64\include" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtGui" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtANGLE" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtCore" "-I.\release" "-I.\..\..\QT\5.9.1\MSVC2017_64\mkspecs\win32-msvc" "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtMultimedia" "-I$(QTDIR)\include\QtMultimediaWidgets" "-I$(QTDIR)\include\QtQuick" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtScriptTools" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtScript" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtConcurrent" "-I$(QTDIR)\include\QtQuickWidgets"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing frameswindow.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_GUI_LIB -DQT_CORE_LIB -DQT_MULTIMEDIA_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_SCRIPTTOOLS_LIB -DQT_UITOOLS_LIB -DQT_SCRIPT_LIB -DQT_WIDGETS_LIB -DQT_CONCURRENT_LIB -DQT_QUICKWIDGETS_LIB  "-I." "-IU:\QtProjects\SpeechRecognitionEducator\include" "-I.\DEPENDPATH" "-I.\+=" "-IC:\Program Files (x86)\AMD APP SDK\3.0\include" "-IU:\QT\5.9.1\MSVC2017_64\include" "-IU:\QT\5.9.1\MSVC2017_64\include\QtGui" "-IU:\QT\5.9.1\MSVC2017_64\include\QtANGLE" "-IU:\QT\5.9.1\MSVC2017_64\include\QtCore" "-I.\debug" "-IU:\QT\5.9.1\MSVC2017_64\mkspecs\win32-msvc" "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtMultimedia" "-I$(QTDIR)\include\QtMultimediaWidgets" "-I$(QTDIR)\include\QtQuick" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtScriptTools" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtScript" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtConcurrent" "-I$(QTDIR)\include\QtQuickWidgets"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing frameswindow.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="hmmsettings.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG -DQT_MULTIMEDIA_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_SCRIPTTOOLS_LIB -DQT_UITOOLS_LIB -DQT_SCRIPT_LIB -DQT_WIDGETS_LIB -DQT_CONCURRENT_LIB -DQT_QUICKWIDGETS_LIB  "-I." "-IU:\QtProjects\SpeechRecognitionEducator\include" "-I.\DEPENDPATH" "-I.\+=" "-IC:\Program Files (x86)\AMD APP SDK\3.0\include" "-I.\..\..\QT\5.9.1\MSVC2017_64\include" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtGui" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtANGLE" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtCore" "-I.\release" "-I.\..\..\QT\5.9.1\MSVC2017_64\mkspecs\win32-msvc" "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtMultimedia" "-I$(QTDIR)\include\QtMultimediaWidgets" "-I$(QTDIR)\include\QtQuick" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtScriptTools" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtScript" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtConcurrent" "-I$(QTDIR)\include\QtQuickWidgets"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing hmmsettings.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_GUI_LIB -DQT_CORE_LIB -DQT_MULTIMEDIA_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_SCRIPTTOOLS_LIB -DQT_UITOOLS_LIB -DQT_SCRIPT_LIB -DQT_WIDGETS_LIB -DQT_CONCURRENT_LIB -DQT_QUICKWIDGETS_LIB  "-I." "-IU:\QtProjects\SpeechRecognitionEducator\include" "-I.\DEPENDPATH" "-I.\+=" "-IC:\Program Files (x86)\AMD APP SDK\3.0\include" "-IU:\QT\5.9.1\MSVC2017_64\include" "-IU:\QT\5.9.1\MSVC2017_64\include\QtGui" "-IU:\QT\5.9.1\MSVC2017_64\include\QtANGLE" "-IU:\QT\5.9.1\MSVC2017_64\include\QtCore" "-I.\debug" "-IU:\QT\5.9.1\MSVC2017_64\mkspecs\win32-msvc" "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtMultimedia" "-I$(QTDIR)\include\QtMultimediaWidgets" "-I$(QTDIR)\include\QtQuick" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtScriptTools" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtScript" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtConcurrent" "-I$(QTDIR)\include\QtQuickWidgets"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing hmmsettings.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="hmmtrainer.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG -DQT_MULTIMEDIA_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_SCRIPTTOOLS_LIB -DQT_UITOOLS_LIB -DQT_SCRIPT_LIB -DQT_WIDGETS_LIB -DQT_CONCURRENT_LIB -DQT_QUICKWIDGETS_LIB  "-I." "-IU:\QtProjects\SpeechRecognitionEducator\include" "-I.\DEPENDPATH" "-I.\+=" "-IC:\Program Files (x86)\AMD APP SDK\3.0\include" "-I.\..\..\QT\5.9.1\MSVC2017_64\include" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtGui" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtANGLE" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtCore" "-I.\release" "-I.\..\..\QT\5.9.1\MSVC2017_64\mkspecs\win32-msvc" "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtMultimedia" "-I$(QTDIR)\include\QtMultimediaWidgets" "-I$(QTDIR)\include\QtQuick" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtScriptTools" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtScript" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtConcurrent" "-I$(QTDIR)\include\QtQuickWidgets"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing hmmtrainer.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_GUI_LIB -DQT_CORE_LIB -DQT_MULTIMEDIA_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_SCRIPTTOOLS_LIB -DQT_UITOOLS_LIB -DQT_SCRIPT_LIB -DQT_WIDGETS_LIB -DQT_CONCURRENT_LIB -DQT_QUICKWIDGETS_LIB  "-I." "-IU:\QtProjects\SpeechRecognitionEducator\include" "-I.\DEPENDPATH" "-I.\+=" "-IC:\Program Files (x86)\AMD APP SDK\3.0\include" "-IU:\QT\5.9.1\MSVC2017_64\include" "-IU:\QT\5.9.1\MSVC2017_64\include\QtGui" "-IU:\QT\5.9.1\MSVC2017_64\include\QtANGLE" "-IU:\QT\5.9.1\MSVC2017_64\include\QtCore" "-I.\debug" "-IU:\QT\5.9.1\MSVC2017_64\mkspecs\win32-msvc" "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtMultimedia" "-I$(QTDIR)\include\QtMultimediaWidgets" "-I$(QTDIR)\include\QtQuick" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtScriptTools" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtScript" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtConcurrent" "-I$(QTDIR)\include\QtQuickWidgets"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing hmmtrainer.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG -DQT_MULTIMEDIA_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_SCRIPTTOOLS_LIB -DQT_UITOOLS_LIB -DQT_SCRIPT_LIB -DQT_WIDGETS_LIB -DQT_CONCURRENT_LIB -DQT_QUICKWIDGETS_LIB  "-I." "-IU:\QtProjects\SpeechRecognitionEducator\include" "-I.\DEPENDPATH" "-I.\+=" "-IC:\Program Files (x86)\AMD APP SDK\3.0\include" "-I.\..\..\QT\5.9.1\MSVC2017_64\include" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtGui" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtANGLE" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtCore" "-I.\release" "-I.\..\..\QT\5.9.1\MSVC2017_64\mkspecs\win32-msvc" "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtMultimedia" "-I$(QTDIR)\include\QtMultimediaWidgets" "-I$(QTDIR)\include\QtQuick" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtScriptTools" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtScript" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtConcurrent" "-I$(QTDIR)\include\QtQuickWidgets"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing mainwindow.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_GUI_LIB -DQT_CORE_LIB -DQT_MULTIMEDIA_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_SCRIPTTOOLS_LIB -DQT_UITOOLS_LIB -DQT_SCRIPT_LIB -DQT_WIDGETS_LIB -DQT_CONCURRENT_LIB -DQT_QUICKWIDGETS_LIB  "-I." "-IU:\QtProjects\SpeechRecognitionEducator\include" "-I.\DEPENDPATH" "-I.\+=" "-IC:\Program Files (x86)\AMD APP SDK\3.0\include" "-IU:\QT\5.9.1\MSVC2017_64\include" "-IU:\QT\5.9.1\MSVC2017_64\include\QtGui" "-IU:\QT\5.9.1\MSVC2017_64\include\QtANGLE" "-IU:\QT\5.9.1\MSVC2017_64\include\QtCore" "-I.\debug" "-IU:\QT\5.9.1\MSVC2017_64\mkspecs\win32-msvc" "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtMultimedia" "-I$(QTDIR)\include\QtMultimediaWidgets" "-I$(QTDIR)\include\QtQuick" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtScriptTools" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtScript" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtConcurrent" "-I$(QTDIR)\include\QtQuickWidgets"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing mainwindow.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <ClInclude Include="matrixcalcs.h" />
+    <CustomBuild Include="mfccdialog.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG -DQT_MULTIMEDIA_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_SCRIPTTOOLS_LIB -DQT_UITOOLS_LIB -DQT_SCRIPT_LIB -DQT_WIDGETS_LIB -DQT_CONCURRENT_LIB -DQT_QUICKWIDGETS_LIB  "-I." "-IU:\QtProjects\SpeechRecognitionEducator\include" "-I.\DEPENDPATH" "-I.\+=" "-IC:\Program Files (x86)\AMD APP SDK\3.0\include" "-I.\..\..\QT\5.9.1\MSVC2017_64\include" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtGui" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtANGLE" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtCore" "-I.\release" "-I.\..\..\QT\5.9.1\MSVC2017_64\mkspecs\win32-msvc" "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtMultimedia" "-I$(QTDIR)\include\QtMultimediaWidgets" "-I$(QTDIR)\include\QtQuick" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtScriptTools" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtScript" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtConcurrent" "-I$(QTDIR)\include\QtQuickWidgets"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing mfccdialog.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_GUI_LIB -DQT_CORE_LIB -DQT_MULTIMEDIA_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_SCRIPTTOOLS_LIB -DQT_UITOOLS_LIB -DQT_SCRIPT_LIB -DQT_WIDGETS_LIB -DQT_CONCURRENT_LIB -DQT_QUICKWIDGETS_LIB  "-I." "-IU:\QtProjects\SpeechRecognitionEducator\include" "-I.\DEPENDPATH" "-I.\+=" "-IC:\Program Files (x86)\AMD APP SDK\3.0\include" "-IU:\QT\5.9.1\MSVC2017_64\include" "-IU:\QT\5.9.1\MSVC2017_64\include\QtGui" "-IU:\QT\5.9.1\MSVC2017_64\include\QtANGLE" "-IU:\QT\5.9.1\MSVC2017_64\include\QtCore" "-I.\debug" "-IU:\QT\5.9.1\MSVC2017_64\mkspecs\win32-msvc" "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtMultimedia" "-I$(QTDIR)\include\QtMultimediaWidgets" "-I$(QTDIR)\include\QtQuick" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtScriptTools" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtScript" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtConcurrent" "-I$(QTDIR)\include\QtQuickWidgets"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing mfccdialog.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <ClInclude Include="mfccholder.h" />
+    <ClInclude Include="mog.h" />
+    <CustomBuild Include="openclinterface.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG -DQT_MULTIMEDIA_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_SCRIPTTOOLS_LIB -DQT_UITOOLS_LIB -DQT_SCRIPT_LIB -DQT_WIDGETS_LIB -DQT_CONCURRENT_LIB -DQT_QUICKWIDGETS_LIB  "-I." "-IU:\QtProjects\SpeechRecognitionEducator\include" "-I.\DEPENDPATH" "-I.\+=" "-IC:\Program Files (x86)\AMD APP SDK\3.0\include" "-I.\..\..\QT\5.9.1\MSVC2017_64\include" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtGui" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtANGLE" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtCore" "-I.\release" "-I.\..\..\QT\5.9.1\MSVC2017_64\mkspecs\win32-msvc" "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtMultimedia" "-I$(QTDIR)\include\QtMultimediaWidgets" "-I$(QTDIR)\include\QtQuick" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtScriptTools" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtScript" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtConcurrent" "-I$(QTDIR)\include\QtQuickWidgets"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing openclinterface.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_GUI_LIB -DQT_CORE_LIB -DQT_MULTIMEDIA_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_SCRIPTTOOLS_LIB -DQT_UITOOLS_LIB -DQT_SCRIPT_LIB -DQT_WIDGETS_LIB -DQT_CONCURRENT_LIB -DQT_QUICKWIDGETS_LIB  "-I." "-IU:\QtProjects\SpeechRecognitionEducator\include" "-I.\DEPENDPATH" "-I.\+=" "-IC:\Program Files (x86)\AMD APP SDK\3.0\include" "-IU:\QT\5.9.1\MSVC2017_64\include" "-IU:\QT\5.9.1\MSVC2017_64\include\QtGui" "-IU:\QT\5.9.1\MSVC2017_64\include\QtANGLE" "-IU:\QT\5.9.1\MSVC2017_64\include\QtCore" "-I.\debug" "-IU:\QT\5.9.1\MSVC2017_64\mkspecs\win32-msvc" "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtMultimedia" "-I$(QTDIR)\include\QtMultimediaWidgets" "-I$(QTDIR)\include\QtQuick" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtScriptTools" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtScript" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtConcurrent" "-I$(QTDIR)\include\QtQuickWidgets"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing openclinterface.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="openclsettings.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG -DQT_MULTIMEDIA_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_SCRIPTTOOLS_LIB -DQT_UITOOLS_LIB -DQT_SCRIPT_LIB -DQT_WIDGETS_LIB -DQT_CONCURRENT_LIB -DQT_QUICKWIDGETS_LIB  "-I." "-IU:\QtProjects\SpeechRecognitionEducator\include" "-I.\DEPENDPATH" "-I.\+=" "-IC:\Program Files (x86)\AMD APP SDK\3.0\include" "-I.\..\..\QT\5.9.1\MSVC2017_64\include" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtGui" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtANGLE" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtCore" "-I.\release" "-I.\..\..\QT\5.9.1\MSVC2017_64\mkspecs\win32-msvc" "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtMultimedia" "-I$(QTDIR)\include\QtMultimediaWidgets" "-I$(QTDIR)\include\QtQuick" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtScriptTools" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtScript" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtConcurrent" "-I$(QTDIR)\include\QtQuickWidgets"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing openclsettings.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_GUI_LIB -DQT_CORE_LIB -DQT_MULTIMEDIA_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_SCRIPTTOOLS_LIB -DQT_UITOOLS_LIB -DQT_SCRIPT_LIB -DQT_WIDGETS_LIB -DQT_CONCURRENT_LIB -DQT_QUICKWIDGETS_LIB  "-I." "-IU:\QtProjects\SpeechRecognitionEducator\include" "-I.\DEPENDPATH" "-I.\+=" "-IC:\Program Files (x86)\AMD APP SDK\3.0\include" "-IU:\QT\5.9.1\MSVC2017_64\include" "-IU:\QT\5.9.1\MSVC2017_64\include\QtGui" "-IU:\QT\5.9.1\MSVC2017_64\include\QtANGLE" "-IU:\QT\5.9.1\MSVC2017_64\include\QtCore" "-I.\debug" "-IU:\QT\5.9.1\MSVC2017_64\mkspecs\win32-msvc" "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtMultimedia" "-I$(QTDIR)\include\QtMultimediaWidgets" "-I$(QTDIR)\include\QtQuick" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtScriptTools" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtScript" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtConcurrent" "-I$(QTDIR)\include\QtQuickWidgets"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing openclsettings.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <ClInclude Include="phoneme.h" />
+    <ClInclude Include="phonemeparser.h" />
+    <ClInclude Include="phonemesLibrary.h" />
+    <CustomBuild Include="qcustomplot.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG -DQT_MULTIMEDIA_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_SCRIPTTOOLS_LIB -DQT_UITOOLS_LIB -DQT_SCRIPT_LIB -DQT_WIDGETS_LIB -DQT_CONCURRENT_LIB -DQT_QUICKWIDGETS_LIB  "-I." "-IU:\QtProjects\SpeechRecognitionEducator\include" "-I.\DEPENDPATH" "-I.\+=" "-IC:\Program Files (x86)\AMD APP SDK\3.0\include" "-I.\..\..\QT\5.9.1\MSVC2017_64\include" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtGui" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtANGLE" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtCore" "-I.\release" "-I.\..\..\QT\5.9.1\MSVC2017_64\mkspecs\win32-msvc" "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtMultimedia" "-I$(QTDIR)\include\QtMultimediaWidgets" "-I$(QTDIR)\include\QtQuick" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtScriptTools" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtScript" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtConcurrent" "-I$(QTDIR)\include\QtQuickWidgets"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing qcustomplot.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_GUI_LIB -DQT_CORE_LIB -DQT_MULTIMEDIA_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_SCRIPTTOOLS_LIB -DQT_UITOOLS_LIB -DQT_SCRIPT_LIB -DQT_WIDGETS_LIB -DQT_CONCURRENT_LIB -DQT_QUICKWIDGETS_LIB  "-I." "-IU:\QtProjects\SpeechRecognitionEducator\include" "-I.\DEPENDPATH" "-I.\+=" "-IC:\Program Files (x86)\AMD APP SDK\3.0\include" "-IU:\QT\5.9.1\MSVC2017_64\include" "-IU:\QT\5.9.1\MSVC2017_64\include\QtGui" "-IU:\QT\5.9.1\MSVC2017_64\include\QtANGLE" "-IU:\QT\5.9.1\MSVC2017_64\include\QtCore" "-I.\debug" "-IU:\QT\5.9.1\MSVC2017_64\mkspecs\win32-msvc" "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtMultimedia" "-I$(QTDIR)\include\QtMultimediaWidgets" "-I$(QTDIR)\include\QtQuick" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtScriptTools" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtScript" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtConcurrent" "-I$(QTDIR)\include\QtQuickWidgets"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing qcustomplot.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="threadhandler.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG -DQT_MULTIMEDIA_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_SCRIPTTOOLS_LIB -DQT_UITOOLS_LIB -DQT_SCRIPT_LIB -DQT_WIDGETS_LIB -DQT_CONCURRENT_LIB -DQT_QUICKWIDGETS_LIB  "-I." "-IU:\QtProjects\SpeechRecognitionEducator\include" "-I.\DEPENDPATH" "-I.\+=" "-IC:\Program Files (x86)\AMD APP SDK\3.0\include" "-I.\..\..\QT\5.9.1\MSVC2017_64\include" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtGui" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtANGLE" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtCore" "-I.\release" "-I.\..\..\QT\5.9.1\MSVC2017_64\mkspecs\win32-msvc" "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtMultimedia" "-I$(QTDIR)\include\QtMultimediaWidgets" "-I$(QTDIR)\include\QtQuick" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtScriptTools" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtScript" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtConcurrent" "-I$(QTDIR)\include\QtQuickWidgets"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing threadhandler.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_GUI_LIB -DQT_CORE_LIB -DQT_MULTIMEDIA_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_SCRIPTTOOLS_LIB -DQT_UITOOLS_LIB -DQT_SCRIPT_LIB -DQT_WIDGETS_LIB -DQT_CONCURRENT_LIB -DQT_QUICKWIDGETS_LIB  "-I." "-IU:\QtProjects\SpeechRecognitionEducator\include" "-I.\DEPENDPATH" "-I.\+=" "-IC:\Program Files (x86)\AMD APP SDK\3.0\include" "-IU:\QT\5.9.1\MSVC2017_64\include" "-IU:\QT\5.9.1\MSVC2017_64\include\QtGui" "-IU:\QT\5.9.1\MSVC2017_64\include\QtANGLE" "-IU:\QT\5.9.1\MSVC2017_64\include\QtCore" "-I.\debug" "-IU:\QT\5.9.1\MSVC2017_64\mkspecs\win32-msvc" "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtMultimedia" "-I$(QTDIR)\include\QtMultimediaWidgets" "-I$(QTDIR)\include\QtQuick" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtScriptTools" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtScript" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtConcurrent" "-I$(QTDIR)\include\QtQuickWidgets"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing threadhandler.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <CustomBuild Include="waveform.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG -DQT_MULTIMEDIA_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_SCRIPTTOOLS_LIB -DQT_UITOOLS_LIB -DQT_SCRIPT_LIB -DQT_WIDGETS_LIB -DQT_CONCURRENT_LIB -DQT_QUICKWIDGETS_LIB  "-I." "-IU:\QtProjects\SpeechRecognitionEducator\include" "-I.\DEPENDPATH" "-I.\+=" "-IC:\Program Files (x86)\AMD APP SDK\3.0\include" "-I.\..\..\QT\5.9.1\MSVC2017_64\include" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtGui" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtANGLE" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtCore" "-I.\release" "-I.\..\..\QT\5.9.1\MSVC2017_64\mkspecs\win32-msvc" "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtMultimedia" "-I$(QTDIR)\include\QtMultimediaWidgets" "-I$(QTDIR)\include\QtQuick" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtScriptTools" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtScript" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtConcurrent" "-I$(QTDIR)\include\QtQuickWidgets"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing waveform.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_GUI_LIB -DQT_CORE_LIB -DQT_MULTIMEDIA_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_SCRIPTTOOLS_LIB -DQT_UITOOLS_LIB -DQT_SCRIPT_LIB -DQT_WIDGETS_LIB -DQT_CONCURRENT_LIB -DQT_QUICKWIDGETS_LIB  "-I." "-IU:\QtProjects\SpeechRecognitionEducator\include" "-I.\DEPENDPATH" "-I.\+=" "-IC:\Program Files (x86)\AMD APP SDK\3.0\include" "-IU:\QT\5.9.1\MSVC2017_64\include" "-IU:\QT\5.9.1\MSVC2017_64\include\QtGui" "-IU:\QT\5.9.1\MSVC2017_64\include\QtANGLE" "-IU:\QT\5.9.1\MSVC2017_64\include\QtCore" "-I.\debug" "-IU:\QT\5.9.1\MSVC2017_64\mkspecs\win32-msvc" "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtMultimedia" "-I$(QTDIR)\include\QtMultimediaWidgets" "-I$(QTDIR)\include\QtQuick" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtScriptTools" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtScript" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtConcurrent" "-I$(QTDIR)\include\QtQuickWidgets"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing waveform.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+    <ClInclude Include="wavestructs.h" />
+    <CustomBuild Include="wavfilesholder.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG -DQT_MULTIMEDIA_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_SCRIPTTOOLS_LIB -DQT_UITOOLS_LIB -DQT_SCRIPT_LIB -DQT_WIDGETS_LIB -DQT_CONCURRENT_LIB -DQT_QUICKWIDGETS_LIB  "-I." "-IU:\QtProjects\SpeechRecognitionEducator\include" "-I.\DEPENDPATH" "-I.\+=" "-IC:\Program Files (x86)\AMD APP SDK\3.0\include" "-I.\..\..\QT\5.9.1\MSVC2017_64\include" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtGui" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtANGLE" "-I.\..\..\QT\5.9.1\MSVC2017_64\include\QtCore" "-I.\release" "-I.\..\..\QT\5.9.1\MSVC2017_64\mkspecs\win32-msvc" "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtMultimedia" "-I$(QTDIR)\include\QtMultimediaWidgets" "-I$(QTDIR)\include\QtQuick" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtScriptTools" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtScript" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtConcurrent" "-I$(QTDIR)\include\QtQuickWidgets"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing wavfilesholder.h...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o "$(ConfigurationName)\moc_%(Filename).cpp"  -D_WINDOWS -DUNICODE -DWIN32 -DWIN64 -DQT_GUI_LIB -DQT_CORE_LIB -DQT_MULTIMEDIA_LIB -DQT_MULTIMEDIAWIDGETS_LIB -DQT_QUICK_LIB -DQT_OPENGL_LIB -DQT_SCRIPTTOOLS_LIB -DQT_UITOOLS_LIB -DQT_SCRIPT_LIB -DQT_WIDGETS_LIB -DQT_CONCURRENT_LIB -DQT_QUICKWIDGETS_LIB  "-I." "-IU:\QtProjects\SpeechRecognitionEducator\include" "-I.\DEPENDPATH" "-I.\+=" "-IC:\Program Files (x86)\AMD APP SDK\3.0\include" "-IU:\QT\5.9.1\MSVC2017_64\include" "-IU:\QT\5.9.1\MSVC2017_64\include\QtGui" "-IU:\QT\5.9.1\MSVC2017_64\include\QtANGLE" "-IU:\QT\5.9.1\MSVC2017_64\include\QtCore" "-I.\debug" "-IU:\QT\5.9.1\MSVC2017_64\mkspecs\win32-msvc" "-I.\GeneratedFiles" "-I$(QTDIR)\include\QtCore" "-I$(QTDIR)\include\QtGui" "-I$(QTDIR)\include\QtMultimedia" "-I$(QTDIR)\include\QtMultimediaWidgets" "-I$(QTDIR)\include\QtQuick" "-I$(QTDIR)\include\QtOpenGL" "-I$(QTDIR)\include\QtScriptTools" "-I$(QTDIR)\include\QtUiTools" "-I$(QTDIR)\include\QtScript" "-I$(QTDIR)\include\QtWidgets" "-I$(QTDIR)\include\QtConcurrent" "-I$(QTDIR)\include\QtQuickWidgets"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing wavfilesholder.h...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ConfigurationName)\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">..\..\QT\5.9.1\MSVC2017_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -Zi -MDd -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E ..\..\QT\5.9.1\MSVC2017_64\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;debug\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">debug\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">..\..\QT\5.9.1\MSVC2017_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">cl -Bx"$(QTDIR)\bin\qmake.exe" -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zc:referenceBinding -O2 -MD -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E ..\..\QT\5.9.1\MSVC2017_64\mkspecs\features\data\dummy.cpp 2&gt;NUL &gt;release\moc_predefs.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Generate moc_predefs.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">release\moc_predefs.h;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="audiosettingsdialog.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+    <CustomBuild Include="framesizedialog.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+    <CustomBuild Include="frameswindow.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+    <CustomBuild Include="hmmsettings.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+    <CustomBuild Include="mainwindow.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+    <CustomBuild Include="mfccdialog.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+    <CustomBuild Include="openclsettings.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+    <CustomBuild Include="waveform.ui">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(QTDIR)\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Uic%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\ui_%(Filename).h;%(Outputs)</Outputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\uic.exe" -o ".\GeneratedFiles\ui_%(Filename).h" "%(FullPath)"</Command>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Resources.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(FullPath);.\OpenCL\kernels.cl;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(FullPath);.\OpenCL\kernels.cl;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\rcc.exe" -name "%(Filename)" -no-compress "%(FullPath)" -o .\GeneratedFiles\qrc_%(Filename).cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Rcc%27ing %(Identity)...</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\GeneratedFiles\qrc_%(Filename).cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="OpenCL\kernels.cl">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" lupdateOnBuild="1" Qt5Version_x0020_x64="5.9" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
